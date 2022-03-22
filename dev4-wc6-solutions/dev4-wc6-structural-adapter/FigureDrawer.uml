@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>FigureDrawer</OriginalElement>
+  <nodes>
+    <node x="0.0" y="19.512195121951237">FigureDrawer</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic" zoom="2.05" showDependencies="false" x="169.68909139640846" y="106.55244819365481" />
+  <SelectedNodes>
+    <node>FigureDrawer</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,1 @@
+class Picture(override var name: String) : TreeComponent()
