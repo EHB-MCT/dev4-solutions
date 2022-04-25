@@ -1,0 +1,28 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>WC 4</title>
+    <link th:href="@{/css/main.css}" rel="stylesheet" />
+</head>
+<body>
+<div id="container">
+    <h1>Messages</h1>
+    <div id="messageContainer">
+        <div th:each="m : ${messages}" class="messageItem">
+            <div class="header">
+                <span th:text="${m.author}"></span>
+            </div>
+            <p th:text="${m.message}"> </p>
+        </div>
+    </div>
+    <div id="input">
+        <form th:object="${createMessage}" th:action="@{/addMessage}" method="post">
+            <input type="text" th:field="*{author}">
+            <input type="text" th:field="*{message}"/>
+            <input type="submit" value="submit" class="button" />
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
