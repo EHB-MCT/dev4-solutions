@@ -1,0 +1,17 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Session 7 - Bingo</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="container">
+        <h1 th:text="${card.name}"></h1>
+        <div class="grid">
+                <a th:each="value: ${values}" class="cell checked" th:href="@{'/updateValue?card=' + ${card.id} + '&value=' + ${value.id}}" >
+                    <div th:text="${value.content}"></div>
+                </a>
+        </div>
+    </div>
+  </body>
+</html>

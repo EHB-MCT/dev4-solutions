@@ -1,0 +1,22 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Session 7 - Bingo</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="inputForm">
+        <h1>Bingo generator</h1>
+        <form id="userInput" th:object="${createCard}" th:action="@{/generateCard}" method="post">
+          <input type="text" name="name" id="inputName" placeholder="Your name" />
+          <select name="type" id="inputType">
+            <option value="string" selected>Sentences</option>
+            <option value="numerical">Numbers</option>
+          </select>
+          <input class="button" type="submit">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
